@@ -1,0 +1,156 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  line-height: 1.4;
+  font-size: clamp(40%, 62.5%, 70.25%);
+  color-scheme: dark;
+}
+
+html{
+ scrollbar-width: 0;
+}
+
+body {
+
+  font-size: 1.6rem;
+  background: #FBE5C8;
+  color: #040404;
+}
+ 
+
+.heading-primary {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.heading-secondary {
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+.heading-senary {
+  font-size: 1.6rem;
+  /* text-transform: capitalize; */
+}
+
+.margin-top-min {
+  margin-top: 1.5rem;
+}
+
+main{
+    font-family: "Oxygen", sans-serif;
+}
+ 
+
+.paragraph {
+  font-size: clamp(1.7rem, 2vw, 2.1rem);
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+:is(.paragraph, h4, h5, h6)::first-letter {
+  text-transform: capitalize;
+}
+
+.detail {
+  place-self: center;
+}
+
+.container {
+  padding: 5% 2%;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(18, 18, 18, 0.137254902);
+  -webkit-backdrop-filter: saturate(70%) blur(4px);
+          backdrop-filter: saturate(70%) blur(4px);
+  border-bottom: 0.1px solid #3a3a3a;
+  z-index: 2;
+}
+ 
+
+.header-detail {
+  background: linear-gradient(90deg, #fff 80%, #89766c);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+ 
+.article-container {
+  border-radius: 1.8rem;
+  padding: 5rem 3rem;
+  margin: 5rem auto;
+  gap: 5rem;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .article-container {
+    width: 80%;
+    text-align: left;
+  }
+}
+
+.profile {
+  flex: 1 5%;
+  align-self: center;
+}
+.profile-essay {
+  flex: 1 90%;
+  overflow: hidden;
+}
+@media (min-width: 64em) {
+  .profile-essay {
+    flex: 1 25%;
+    padding: 10%;
+  }
+}
+.profile-heading {
+  font-weight: 300;
+}
+
+.figure {
+  width: 50%;
+  margin-bottom: 3rem;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  overflow: hidden;
+}
+@media (max-width: 64em) {
+  .figure {
+    margin: auto;
+  }
+}
+.figure img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+
+
+.tagline{ 
+  /* overflow: hidden; */
+  height: fit-content;
+  /* width: 4rem; */
+  /* padding: 2rem; */
+  /* background: #fdfcfc7b; */
+  /* color: black; */
+ 
+  /* writing-mode: vertical-rl;
+text-orientation: upright; */
+ 
+}
+
+/* .tagline_description{
+  opacity: 0; 
+  overflow: hidden;
+  height: fit-content 
+} */
