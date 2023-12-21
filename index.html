@@ -43,20 +43,17 @@
       <h1 class="heading-primary">adebouge holdings</h1>
     </nav>
 
-    <header class="header-container">
-      <div class="header-detail h-screen relative w-screen bg-red-500">
-        <div
-          class="subtitiles1 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full lg:w-1/2 px-[5%]"
-        >
+    <header class="header-container h-screen flex gap-10 justify-center item-center "> 
           <div
-            class="flex flex-col item-center flex-nowrap gap-4 overflow-hidden"
+            class="self-center flex flex-col item-center flex-nowrap gap-4 overflow-hidden"
           >
             <h1 class="tagline text-left text-8xl font-extrabold"></h1>
-            <div class="border-[1px] border-black"></div>
+            <div class="border-[1px] border-gray-500"></div>
             <p class="tagline_description text-4xl text-left"></p>
           </div>
-        </div>
-      </div>
+            <div class="self-center rotate-x-[30] translate-y-[20vh] bg-gray-500 text-black hidden md:block p-4 transform rotate-90">
+              <p class="text-sm text-zinc-400">Empowering the underserved commuinities.</p>
+            </div>
     </header>
 
     <main
@@ -65,31 +62,36 @@
       <section
         class="flex flex-col gap-10 justify-between w-4/5 lg:w-3/5 m-auto"
       >
-        <header class="border-b-[1px] border-black mb-4">
+        <header class="border-b-[1px] border-gray-500 mb-4">
           <h3 class="text-6xl">Engagement</h3>
         </header>
 
-        <div class="flex-initial lg:ml-auto w-full md:w-1/2  flex flex-col gap-10">
-          <article>
-            <header>
-              <h3 class="font-semibold text-2xl my-2">Partner Collaboration</h3>
-            </header>
-            <p>
-              Partner with private sector companies to jointly promote the
-              initiative, sharing positive experiences and showcasing mutual
-              benefits for students. employers. and the local economy
-            </p>
-          </article>
-          <article>
-            <header>
-              <h3 class="font-semibold text-2xl my-2">Online Advertisements</h3>
-            </header>
-            <p>
-              Targeted micro-presentations to stakeholders, students, parents,
-              and investors through online ads on educational websites, career
-              platforms, and social media networks
-            </p>
-          </article>
+        <div class="flex flex-col lg:grid grid-cols-2 gap-4 flex-initial lg:ml-auto">
+          <div class="row-span-3 flex item-center justify-center">        
+            <article class="self-center">
+              <header>
+                <h3 class="font-semibold text-4xl my-2">Partner Collaboration</h3>
+              </header>
+              <p>
+                Partner with private sector companies to jointly promote the
+                initiative, sharing positive experiences and showcasing mutual
+                benefits for students. employers. and the local economy
+              </p>
+            </article>
+          </div>
+          <div class="">
+            <article>
+              <header>
+                <h3 class="font-semibold text-2xl my-2">Online Advertisements</h3>
+              </header>
+              <p>
+                Targeted micro-presentations to stakeholders, students, parents,
+                and investors through online ads on educational websites, career
+                platforms, and social media networks
+              </p>
+            </article>
+          </div>
+       
           <article>
             <header>
               <Workshops class="font-semibold text-2xl my-2">Workshops and Webinars</h3>
