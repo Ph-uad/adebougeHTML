@@ -11,14 +11,18 @@
 }
 
 html{
- scrollbar-width: 0;
+ scrollbar-width: 0; 
 }
 
 body {
-
+  box-sizing: border-box;
+  max-width: 2640px;  
+  margin: 0 auto;
+  line-height: 2;
   font-size: 1.6rem;
-  background: #001A23;
+  background: #040404;
   color: #EAEAEA;
+  font-family: 'Inter', sans-serif;
 }
  
 
@@ -36,12 +40,14 @@ body {
   /* text-transform: capitalize; */
 }
 
-.margin-top-min {
-  margin-top: 1.5rem;
+.header-container{
+  background:  no-repeat top center / cover;
+  background-attachment: fixed;
+  background-image:  linear-gradient(#040404e4, #040404d0), url(./img/hero.webp);
 }
 
-main{
-    font-family: "Oxygen", sans-serif;
+.margin-top-min {
+  margin-top: 1.5rem;
 }
  
 
@@ -135,6 +141,9 @@ main{
 }
 
 
+p{
+  margin:  1rem ;
+}
 
 .tagline{ 
   /* overflow: hidden; */
