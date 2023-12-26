@@ -18,6 +18,10 @@
             colors: {
               clifford: "#da373d",
             },
+            backgroundImage: {
+              hero: "url('./assets/img/hero.jpg')",
+              "footer-texture": "url('/img/footer-texture.png')",
+            },
           },
         },
       };
@@ -28,9 +32,12 @@
     <meta name="color-scheme" content="dark" />
     <link rel="stylesheet" href="./assets/style.css" />
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Adebouge Holdings</title>
   </head>
@@ -40,136 +47,65 @@
       <h1 class="heading-primary">adebouge holdings</h1>
     </nav>
 
-    <header class=" header-container h-screen w-full flex gap-10 justify-center item-center "> 
-          <div
-            class="self-center w-fit flex flex-col item-center flex-nowrap gap-4 overflow-hidden p-4"
-          >
-            <h1 class="tagline text-left text-8xl font-extrabold"></h1>
-            <div class="border-[1px] border-gray-500"></div>
-            <p class="tagline_description text-4xl text-left"></p>
+    <main class="flex flex-col gap-10 items-center justify-between">
+      <div id="about" class="bg-hero bg-no-repeat bg-center bg-cover h-screen">
+        <div
+          class="flex items-center px-8 lg:w-1/2 lg:ml-auto bg-zinc-900 h-full bg-opacity-90"
+        >
+          <div class="">
+            <header class="">
+              <h2 class="text-6xl">About</h2>
+              <p class="text-3xl">
+                <!-- What are you building and for whom? -->
+                Adebouge Holdings enables Education to Employment (E2E)
+                opportunities for young talents in emerging economies and
+                ensures competitive market returns for investors by facilitating
+                incentivized stakeholder collaborations through public-private
+                partnerships with local authorities, investors, and
+                technology-enabled startups and businesses.
+              </p>
+              <!-- <p>
+                Our model focuses on identifying and exploring intrinsic
+                incentives in stakeholders relationships and leverage technology
+                infrastructure to integrate STEM-related Vocational Technical
+                Education (VTE) in Senior Schools' curricula, addressing
+                structural unemployment in emerging market communities in sub
+                Saharan Africa, such as Surulere, a major local jurisdiction in
+                Lagos State, Nigeria.
+              </p> -->
+            </header>
           </div>
-            <!-- <div class="self-center rotate-x-[30] translate-y-[20vh] bg-gray-500 text-black hidden md:block p-4 transform rotate-90">
-              <p class="text-sm text-zinc-400">Empowering the underserved commuinities.</p>
-            </div> -->
-    </header>
+        </div>
+      </div>
 
-    <main
-      class="my-[10%] flex flex-col gap-64 item-center justify-around relative"
-    >
-
-    <div class="w-4/5 lg:w-3/5 self-center">
-      <header class="border-b-[1px] border-gray-500 mb-4">
-        <h3 class="text-6xl"> What are you building and for whom?</h3>
-      </header> 
-      <p class="md:text-3xl">
-        Adebouge Holdings enables Education to Employment (E2E) opportunities for young talents in emerging economies and ensures competitive market returns for investors by facilitating incentivized stakeholder collaborations through public-private partnerships with local authorities, investors, and technology-enabled startups and businesses. 
-      </p>
-      <p class="md:text-3xl">
-        Our model focuses on identifying and exploring intrinsic incentives in stakeholders relationships and leverage technology infrastructure to integrate STEM-related Vocational Technical Education (VTE) in Senior Schools' curricula, addressing structural unemployment in emerging market communities in sub Saharan Africa, such as Surulere, a major local jurisdiction in Lagos State, Nigeria.
-      </p>
-
-    </div>
-
-      <section
-        class="flex flex-col gap-10 justify-between self-center"
+      <div
+        id="model"
+        class="border-t-[1px] border-white pt-10 flex-auto flex gap-10 lg:w-4/5"
       >
-       
-
-        <div class="flex flex-col lg:grid grid-cols-2 gap-4 md:gap-0 flex-initial lg:ml-auto">
-          <div class="row-span-3 flex item-center justify-center bg-[#121212] rounded-lg py-[17%] px-4 lg:py-[25%]">        
-            <article class="self-center w-4/5 lg:w-3/5  m-auto">
-              <header>
-                <h3 class="font-semibold text-4xl my-2">Partner Collaboration</h3>
-              </header>
-              <p class="md:text-3xl">
-                Partner with private sector companies to jointly promote the
-                initiative, sharing positive experiences and showcasing mutual
-                benefits for students. employers. and the local economy
-              </p>
-            </article>
-          </div>
-          <div class="flex item-center justify-center bg-[#212121] py-[17%] px-4">   
-            <article class="self-center w-4/5 lg:w-3/5  m-auto">
-              <header>
-                <h3 class="font-semibold text-4xl my-2">Online & Offline schooling tools</h3>
-              </header>
-              <p class="md:text-3xl">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eveniet adipisci enim voluptatem? Veritatis, eum. Voluptatem dolore eaque at vel! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, perferendis!
-
-              </p>
-            </article>
-          </div>
-          <div class="flex item-center justify-center bg-[#303030] py-[17%] px-4">   
-            <article class="self-center w-4/5 lg:w-3/5  m-auto">
-              <header>
-                <Workshops class="font-semibold text-4xl my-2">Workshops and Webinars</h3>
-              </header>
-              <p class="md:text-3xl">
-                Conduct virtual workshops and webinars showcasina private sector
-                insights to build trust and educate stakeholders about program
-                benefits Challenges Solutions
-              </p>
-            </article>
-          </div> 
+        <div id="model_content self-end">
+          <header>
+            <h2 class="text-5xl">Model</h2>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            a ea eligendi itaque, culpa recusandae.
+          </p>
         </div>
-      </section>
- 
+        <figure
+          class="h-full aspect-square flex-auto border-[1px] border-white"
+        ></figure>
+      </div>
+
+      <div
+        id="model"
+        class="border-t-[1px] border-white pt-10 flex-auto flex flex-col gap-4 lg:w-4/5"
+      >
+      <h2 class="text-5xl">Lorem ipsum dolor, si Lorem ipsum dolor sit amet consectetur adipisicing. amet consectetur adipisicing elit. Esse, ipsum? Lorem ipsum dolor sit amet.</h2>
+      <figure
+      class="h-full aspect-video flex-auto border-[1px] border-white"
+    ></figure>
+    </div>
     </main>
-
-    <div class="">
-      <iframe
-        class="sm:mx[10%] my-[10vh] m-auto aspect-video block w-4/5 md:w-1/2 rounded-lg overflow-hidden"
-        src="https://www.youtube-nocookie.com/embed/WO2yLOpJaK0?si=7rfCNlXpM3OpAGiI"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-
-    <div class="flex flex-col item-center py-24 flex-row gap-20 justify-between w-4/5 lg:w-3/5 text-center m-auto">
-    <div class="flex flex-col self-center flex-wrap md:flex-row justify-between gap-10">
-      <div class="">
-        <h2 class="font-bold">Bayo Adebogun</h2>
-        <label for="" class="italic">Co-Founder</label>
-
-        <div class="mt-[2.5rem] flex gap-8 align-center justify-end hidden">
-          <a
-            class="link w-[1.5rem] aspect-square block"
-            href="https://twitter.com/BayoAdebogun?s=20&t=uHMYAVR9alnVAD515xanCA"
-          >
-            <svg class="w-full animate-pulse aspect-square block">
-              <use href="./assets/img/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a>
-          <a
-            class="link w-[1.5rem] aspect-square block"
-            href="https://www.linkedin.com/in/adebayo-adebogun-pmp?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAhrmD4By6dXII6HnwPzEhNhvRYvr7kJBIY&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BgFG0nUwzSY%2BuHsxHgm4Dyw%3D%3D"
-          >
-            <svg class="w-full animate-pulse aspect-square block">
-              <use href="./assets/img/sprite.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="   ">
-        <h2 class="font-bold">Ana Golubova</h2>
-        <label for="" class="italic">Co-Founder</label>
-     
-      </div>
-      <!-- <div class="  ">
-        <h2 class="font-bold">Yannick Dago</h2>`
-        <label for="" class="italic">Advisory - Finance</label>
-
-      </div> -->
-     
-    </div>
-      <h4 class="self-center">Contact us</h4>
-      <div class="self-center hover:underline">
-        <a href="mailto:info@adebouge.com">info@adebouge.com</a>
-      </div> 
-      </div>
-    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
 

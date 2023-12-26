@@ -16,7 +16,7 @@ html{
 
 body {
   box-sizing: border-box;
-  max-width: 2640px;  
+  /* max-width: 2640px;   */
   margin: 0 auto;
   line-height: 2;
   font-size: 1.6rem;
@@ -142,7 +142,7 @@ body {
 
 
 p{
-  margin:  1rem ;
+  margin:  1rem !important ;
 }
 
 .tagline{ 
