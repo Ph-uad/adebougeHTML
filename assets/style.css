@@ -99,7 +99,7 @@ h3,h4{
 p{ 
   /* font-weight: lighter !important;  */
   line-height: calc(1ex / 0.32);
-  margin: calc(1ex / 0.32) !important;
+  margin: calc(1ex / 0.32) .5rem !important;
 }
 
 .tagline{  
