@@ -6,8 +6,8 @@ const labeltagline = document.querySelector(".tagline_description");
 
 const content = ["IaaS"];
 const contentTagLine = [
-  `Impact as a Service (laaS) <br/>
-   Building the business infrastructure of the future`,
+  `Impact as a Service (laaS), <br/>
+   Building the business infrastructure of the future.`,
 ];
 label.innerHTML = content[index];
 labeltagline.innerHTML = contentTagLine[index];

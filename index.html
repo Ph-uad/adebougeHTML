@@ -19,8 +19,13 @@
               clifford: "#da373d",
             },
             backgroundImage: {
-              hero: "url('./assets/img/hero.jpg')",
-              "footer-texture": "url('/img/footer-texture.png')",
+              hubs: "linear-gradient(to   bottom, #040404a0 , #040404 99%), url(./assets/img/hero.webp)",
+              partnership:
+                "linear-gradient(to   bottom, #040404a0 , #040404 99%), url(./assets/img/puzzle.jpg)",
+              work: "linear-gradient(to   top, #040404a0 , #040404 99%), url(./assets/img/work.jpg)",
+            },
+            gridAutoRows: {
+              "4fr": "minmax(3fr, 4fr)",
             },
           },
         },
@@ -35,77 +40,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300;1,400&family=Oxygen:wght@300&display=swap"
       rel="stylesheet"
     />
 
     <title>Adebouge Holdings</title>
   </head>
 
-  <body class="w-full overflow-x-hidden mx-auto">
+  <body class="antialiased sm:subpixel-antialiased md:antialiased">
     <nav class="nav">
       <h1 class="heading-primary">adebouge holdings</h1>
     </nav>
 
-    <main class="flex flex-col gap-10 items-center justify-between">
-      <div id="about" class="bg-hero bg-no-repeat bg-center bg-cover h-screen">
+    <header class="h-screen relative flex items-center justify-center">
+      <div
+        class="subtitiles1 w-4/5 lg:w-1/2 px-[5%] flex flex-col item-center flex-nowrap gap-4 overflow-hidden"
+      >
+        <h1 class="tagline text-left text-6xl lg:text-8xl font-extrabold"></h1>
+        <div class="border-[1px] border-white"></div>
+        <p
+          class="tagline_description text-lg font-regular lg:text-4xl text-left"
+        ></p>
+      </div>
+    </header>
+
+    <main
+      class="flex flex-col items-center justify-betweeen gap-64 text-lg lg:text-4xl"
+    >
+      <div class="w-screen min-h-[60vh] flex items-center justify-center">
         <div
-          class="flex items-center px-8 lg:w-1/2 lg:ml-auto bg-zinc-900 h-full bg-opacity-90"
+          class="text-lg lg:text-4xl w-4/5 lg:grid grid-cols-2 auto-cols-fr auto-rows-4fr"
         >
-          <div class="">
-            <header class="">
-              <h2 class="text-6xl">About</h2>
-              <p class="text-3xl">
-                <!-- What are you building and for whom? -->
-                Adebouge Holdings enables Education to Employment (E2E)
-                opportunities for young talents in emerging economies and
-                ensures competitive market returns for investors by facilitating
-                incentivized stakeholder collaborations through public-private
-                partnerships with local authorities, investors, and
-                technology-enabled startups and businesses.
-              </p>
-              <!-- <p>
-                Our model focuses on identifying and exploring intrinsic
-                incentives in stakeholders relationships and leverage technology
-                infrastructure to integrate STEM-related Vocational Technical
-                Education (VTE) in Senior Schools' curricula, addressing
-                structural unemployment in emerging market communities in sub
-                Saharan Africa, such as Surulere, a major local jurisdiction in
-                Lagos State, Nigeria.
-              </p> -->
-            </header>
-          </div>
+          <article class="flex flex-col gap-4 justify-around">
+            <p>
+              <span class="font-bold">Adebouge Holdings</span>, is a
+              research-driven technology company, that is combating youth
+              unemployment in emerging economies through strategic partnerships
+              and our robust crowdsourcing capabilities.
+            </p>
+          </article>
+          <div
+            class="order-2 bg-partnership bg-no-repeat bg-cover bg-center aspect-video"
+          ></div>
+          <article class="flex flex-col gap-4 justify-around order-4">
+            <p>
+              We reposition local business to improve on their operational
+              capabilities, increase margins, and create job opportunities for
+              young people. We provide targeted companies access to our global
+              resources through our vast network of collaborators to transform
+              them from small ventures into potential multibillion-dollar
+              organizations.
+            </p>
+          </article>
+          <div class="order-3 order-2 bg-work bg-top aspect-video"></div>
         </div>
       </div>
 
-      <div
-        id="model"
-        class="border-t-[1px] border-white pt-10 flex-auto flex gap-10 lg:w-4/5"
-      >
-        <div id="model_content self-end">
-          <header>
-            <h2 class="text-5xl">Model</h2>
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            a ea eligendi itaque, culpa recusandae.
-          </p>
-        </div>
-        <figure
-          class="h-full aspect-square flex-auto border-[1px] border-white"
-        ></figure>
-      </div>
+      <iframe
+        class="sm:mx[10%] my-[10vh] m-auto aspect-video block w-4/5 lg:w-1/2 overflow-hidden"
+        src="https://www.youtube-nocookie.com/embed/WO2yLOpJaK0?si=7rfCNlXpM3OpAGiI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
 
-      <div
-        id="model"
-        class="border-t-[1px] border-white pt-10 flex-auto flex flex-col gap-4 lg:w-4/5"
-      >
-      <h2 class="text-5xl">Lorem ipsum dolor, si Lorem ipsum dolor sit amet consectetur adipisicing. amet consectetur adipisicing elit. Esse, ipsum? Lorem ipsum dolor sit amet.</h2>
-      <figure
-      class="h-full aspect-video flex-auto border-[1px] border-white"
-    ></figure>
-    </div>
+      <article class="w-4/5 m-auto lg:w-1/2 text-lg lg:text-4xl">
+        <header class="">
+          <h3 class="border-b-[1px] border-white uppercase">Market Insight</h3>
+        </header>
+        <p>
+          According to Gordon Brown, former Prime Minister of Britain – <i> the
+          world went through, covid, and the supply shock, then demand shocks,
+          the shocks and aftershocks associated with the ongoing war in
+          Ukraine, Gaza, and countless of other conflicts zone around the world
+          but still was able to tame inflation to around 3%, unemployment in the
+          US around 3.7% - thanks to AI.</i>
+        </p>
+        <p>
+          Michael Spence Noble Prize Economist from NYU says the world is about
+          to experience productivity like nothing before. Companies should
+          prioritize productizing AI in all aspects of production that makes
+          sense while building a layer of hum control around it. The Markets
+          agree, Satya Nadella, Sam Altman, Mark Zuckerberg, Jeff Bezos, Tim Cook, Elon
+          Musk, Srini Kunshik etc. have gone ahead to prioritize and pivoted the
+          business structure accordingly. We plan to be at the forefront of
+          bring AI to emerging markets.
+        </p>
+      </article>
+
+      <div class="w-fit m-auto px-8 opacity-80 text-lg lg:text-4xl">
+        <h2 class="heading-secondary profile-heading font-bold text-4xl">
+          Bayo Adebogun
+        </h2>
+        <h6 class="">University of Chicago Booth School of Business MBA</h6>
+        <div class="mt-[2.5rem] flex gap-8 align-center justify-end">
+          <a
+            class="link w-[2.5rem] aspect-square block"
+            href="https://twitter.com/BayoAdebogun?s=20&t=uHMYAVR9alnVAD515xanCA"
+          >
+            <svg class="w-full animate-pulse aspect-square block">
+              <use href="./assets/img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a
+            class="link w-[2.5rem] aspect-square block"
+            href="https://www.linkedin.com/in/adebayo-adebogun-pmp?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAhrmD4By6dXII6HnwPzEhNhvRYvr7kJBIY&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BgFG0nUwzSY%2BuHsxHgm4Dyw%3D%3D"
+          >
+            <svg class="w-full animate-pulse aspect-square block">
+              <use href="./assets/img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </main>
+
+    <!-- Founder Link -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
 

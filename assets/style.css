@@ -23,6 +23,9 @@ body {
   background: #040404;
   color: #EAEAEA;
   font-family: 'Inter', sans-serif;
+
+  vertical-align: baseline;
+  word-wrap: break-word;
 }
  
 
@@ -51,10 +54,9 @@ body {
 }
  
 
-.paragraph {
-  font-size: clamp(1.7rem, 2vw, 2.1rem);
-  font-weight: 300;
-  margin: 1rem 0;
+p {
+  /* font-size: clamp(1.7rem, 2vw, 2.1rem); */
+  font-weight: 300; 
 }
 
 :is(.paragraph, h4, h5, h6)::first-letter {
@@ -80,86 +82,27 @@ body {
   border-bottom: 0.1px solid #3a3a3a;
   z-index: 2;
 }
- 
 
-.header-detail {
-  background: linear-gradient(90deg, #fff 80%, #89766c);
-  -webkit-background-clip: text;
-          background-clip: text;
-}
- 
-.article-container {
-  border-radius: 1.8rem;
-  padding: 5rem 3rem;
-  margin: 5rem auto;
-  gap: 5rem;
-  text-align: center;
-}
-
-@media (min-width: 64em) {
-  .article-container {
-    width: 80%;
-    text-align: left;
-  }
-}
-
-.profile {
-  flex: 1 5%;
-  align-self: center;
-}
-.profile-essay {
-  flex: 1 90%;
-  overflow: hidden;
-}
-@media (min-width: 64em) {
-  .profile-essay {
-    flex: 1 25%;
-    padding: 10%;
-  }
-}
-.profile-heading {
-  font-weight: 300;
-}
-
-.figure {
-  width: 50%;
-  margin-bottom: 3rem;
-  -webkit-clip-path: circle(50%);
-          clip-path: circle(50%);
-  overflow: hidden;
-}
-@media (max-width: 64em) {
-  .figure {
-    margin: auto;
-  }
-}
-.figure img {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  transition: all 0.5s linear;
-}
-
-
-p{
-  margin:  1rem !important ;
-}
-
-.tagline{ 
-  /* overflow: hidden; */
-  height: fit-content;
-  /* width: 4rem; */
-  /* padding: 2rem; */
-  /* background: #fdfcfc7b; */
-  /* color: black; */
- 
-  /* writing-mode: vertical-rl;
-text-orientation: upright; */
- 
-}
-
-/* .tagline_description{
-  opacity: 0; 
-  overflow: hidden;
-  height: fit-content 
+/* 
+h2,{
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
 } */
+
+h3,h4{
+  line-height: calc(1ex / 0.38);
+  margin: calc(1ex / 0.38) 0 !important;
+}
+  
+
+
+p{ 
+  /* font-weight: lighter !important;  */
+  line-height: calc(1ex / 0.32);
+  margin: calc(1ex / 0.32) !important;
+}
+
+.tagline{  
+  height: fit-content; 
+}
+ 
