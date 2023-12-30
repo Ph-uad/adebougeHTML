@@ -52,8 +52,7 @@ body {
   margin-top: 1.5rem;
 }
 
-p {
-  /* font-size: clamp(1.7rem, 2vw, 2.1rem); */
+p {  
   font-weight: 300;
 }
 
@@ -80,21 +79,14 @@ p {
   border-bottom: 0.1px solid #3a3a3a;
   z-index: 2;
 }
-
-/* 
-h2,{
-  line-height: calc(1ex / 0.42);
-  margin: calc(1ex / 0.42) 0;
-} */
-
+  
 h3,
 h4 {
   line-height: calc(1ex / 0.38);
   margin: calc(1ex / 0.38) 0 !important;
 }
 
-p {
-  /* font-weight: lighter !important;  */
+p { 
   line-height: calc(1ex / 0.32);
   margin: calc(1ex / 0.32) 0 !important;
 }
