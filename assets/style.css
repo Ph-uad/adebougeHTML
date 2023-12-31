@@ -69,7 +69,7 @@ p {
 }
 
 .nav {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   padding: 1rem;
@@ -95,6 +95,10 @@ p {
   p {
     margin: calc(1ex / 0.32) 0.5rem !important;
   }
+}
+
+.profile-heading{
+  margin: 0  !important;
 }
 
 .tagline {

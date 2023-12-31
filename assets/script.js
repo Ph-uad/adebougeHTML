@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger)
 let index = 0;
 
 const p = document.querySelectorAll(".p");
@@ -56,6 +57,30 @@ gsap.from(".prompt", {
   y: "100%",
 });
 
+// gsap.from("#insight", {
+//   scrollTrigger: {
+//     trigger: "#insighta",
+//     scrub: 20,
+//     start: "top bottom",
+//     end: "20% bottom",
+//     markers:true
+//   },
+//   opacity: 0.1,
+//   y: "100%",
+// });
+
+gsap.from(".headexx", {
+  scrollTrigger: {
+      trigger: ".headexx",
+      start: "top 80%",
+      scrub: 3,
+      end: "bottom center",
+      markers: true
+  },
+  y: -10,
+  opacity: .1
+})
+
 gsap.to(".header-icon", {
   scrollTrigger: {
     trigger: ".header-icon",
@@ -64,3 +89,18 @@ gsap.to(".header-icon", {
   },
   opacity: 0,
 });
+
+// const tl = gsap.timeline({
+//   scrollTrigger: {
+//     scrub: 1,
+//     pin: true,
+//     trigger: "#pin-windmill",
+//     start: "50% 50%",
+//     endTrigger: "#pin-windmill-wrap",
+//     end: "bottom 50%",
+//   },
+// });
+
+// tl.to("#pin-windmill-svg", {
+//   rotateZ: 900,
+// });
