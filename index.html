@@ -25,7 +25,7 @@
               work: "linear-gradient(to   top, #040404a0 , #040404 99%), url(./assets/img/work.jpg)",
             },
             gridAutoRows: {
-              "4fr": "minmax(3fr, 4fr)",
+              '2fr': "2rem",
             },
           },
         },
@@ -48,7 +48,7 @@
   </head>
 
   <body class="antialiased sm:subpixel-antialiased md:antialiased">
-    <nav class="nav">
+    <nav class="nav sticky top-0 w-screen left-0">
       <h1 class="heading-primary">adebouge holdings</h1>
     </nav>
 
@@ -69,10 +69,10 @@
     >
       <div class="w-full h-screen flex items-center justify-center">
         <div
-          class="text-2xl lg:text-4xl w-full h-full lg:grid grid-cols-2 auto-cols-fr auto-rows-4fr"
+          class="text-2xl lg:text-4xl w-full h-full lg:grid grid-cols-2fr auto-cols-fr auto-rows-4fr"
         >
           <article class="w-4/5 place-self-center mx-auto">
-            <p class="">
+            <p class="py-10">
               <span class="font-bold">Adebouge Holdings</span> is a
               research-driven tech company which addresses youth unemployment in
               emerging economies through unique business as a service approach
@@ -84,7 +84,7 @@
             class="order-2 bg-partnership bg-no-repeat bg-cover bg-center aspect-video"
           ></div>
           <article class="mx-auto order-4 w-4/5 place-self-center">
-            <p class="">
+            <p class="py-10">
               We work with partners in the target market to reposition and
               revitalize local high potential businesses by enhancing
               operational capabilities and fostering profitability. Our aim is to
