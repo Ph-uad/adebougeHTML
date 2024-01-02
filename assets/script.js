@@ -75,7 +75,7 @@ gsap.from(".headexx", {
       start: "top 80%",
       scrub: 3,
       end: "bottom center",
-      markers: true
+      // markers: true
   },
   y: -10,
   opacity: .1
