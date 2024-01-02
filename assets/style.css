@@ -88,12 +88,12 @@ h4 {
 
 p { 
   line-height: calc(1ex / 0.32);
-  margin: calc(1ex / 0.32) 0 !important;
+  margin: 3.125em 0 !important; 
 }
 
 @media (min-width: 64em) {
   p {
-    margin: calc(1ex / 0.32) 0.5rem !important;
+    margin: 3.125em 0 !important; 
   }
 }
 
