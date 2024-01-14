@@ -20,12 +20,14 @@
             },
             backgroundImage: {
               hubs: "linear-gradient(to   bottom, #040404a0 , #040404 99%), url(./assets/img/hero.webp)",
+              business:
+                "linear-gradient( #040404 , #040404a0 ), url(./assets/img/business.jpg)",
               partnership:
                 "linear-gradient(to   bottom, #040404a0 , #040404 99%), url(./assets/img/puzzle.jpg)",
               work: "linear-gradient(to   top, #040404a0 , #040404 99%), url(./assets/img/work.jpg)",
             },
             gridAutoRows: {
-              '2fr': 'minmax(0, 2fr)',
+              "2fr": "minmax(0, 2fr)",
             },
           },
         },
@@ -52,64 +54,41 @@
       <h1 class="heading-primary">adebouge holdings</h1>
     </nav>
 
-    <!-- <header class="h-screen relative flex items-center justify-center">
-      <div
-        class="subtitiles1 w-4/5 lg:w-1/2 px-[5%] flex flex-col item-center flex-nowrap gap-4 overflow-hidden"
-      >
-        <h1 class="tagline text-left text-6xl lg:text-8xl font-extrabold"></h1>
-        <div class="border-[1px] border-white"></div>
-        <p
-          class="tagline_description text-lg font-regular lg:text-4xl text-left"
-        ></p>
-      </div>
-    </header> -->
-
     <main
-      class="flex flex-col items-center justify-betweeen gap-64 text-2xl lg:text-4xl"
+      class="flex flex-col items-center justify-betweeen mt-64 text-2xl lg:text-2xl"
     >
-      <div class="w-full lg:h-screen flex items-center justify-center overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 auto-cols-fr auto-rows-2fr gap-32 lg:gap-64  mt-64">
+        <article class="w-4/5 place-self-center mx-auto article">
+          <p class="paragraph py-10">
+            <span class="font-bold">Adebouge Holdings</span> is a
+            research-driven tech company that addresses youth unemployment in
+            emerging economies through unique business as a service approach and
+            enabling impact investing projects through collaboration that
+            strategic U.S Nigeria partnerships.
+          </p>
+        </article>
         <div
-          class="text-2xl lg:text-3xl w-full lg:h-screen grid grid-cols-1 lg:grid-cols-2  auto-cols-fr auto-rows-2fr"
-        >
-          <article class="w-4/5 place-self-center mx-auto">
-            <p class="py-10">
-              <span class="font-bold">Adebouge Holdings</span> is a
-              research-driven tech company that addresses youth unemployment in
-              emerging economies through unique business as a service approach
-              and enabling impact investing projects through collaboration that
-              strategic U.S Nigeria partnerships.
-            </p>
-          </article>
-          <div
-            class="order-2 bg-partnership bg-no-repeat bg-cover bg-center aspect-video overflow-hidden"
-          ></div>
-          <article class="mx-auto order-3 lg:order-4 w-4/5 place-self-center">
-            <p class="py-10">
-              We work with partners in the target market to reposition and
-              revitalize local high potential businesses by enhancing
-              operational capabilities and fostering profitability. Our aim is to
-              transform small ventures into potential global multibillion-dollar
-              organizations that create sustainable job opportunities for young
-              people.
-            </p>
-          </article>
-          <div class="order-4 lg:order-3  bg-work bg-no-repeat bg-cover bg-top aspect-video"></div>
-        </div>
+          class="order-2 bg-partnership bg-no-repeat bg-cover bg-center aspect-video overflow-hidden"
+        ></div>
+        <article class="mx-auto order-3 lg:order-4 w-4/5 place-self-center">
+          <p class="paragraph py-10">
+            We work with partners in the target market to reposition and
+            revitalize local high potential businesses by enhancing operational
+            capabilities and fostering profitability. Our aim is to transform
+            small ventures into potential global multibillion-dollar
+            organizations that create sustainable job opportunities for young
+            people.
+          </p>
+        </article>
+        <div
+          class="order-4 lg:order-3 bg-work bg-no-repeat bg-cover bg-top aspect-video media"
+        ></div>
       </div>
 
-      <iframe
-        class="sm:mx[10%] mt-[10vh] m-auto aspect-video block w-4/5 lg:w-1/2 overflow-hidden"
-        src="https://www.youtube-nocookie.com/embed/WO2yLOpJaK0?si=7rfCNlXpM3OpAGiI"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-
-      <div class="flex flex-col items-center justify-betweeen">
+      <div class="grid grid-cols-1 lg:grid-cols-2 auto-cols-fr auto-rows-2fr gap-32 lg:gap-64 my-32 md:my-64">
         <article
           id="insight-article"
-          class="w-4/5 m-auto lg:w-1/2 text-regular lg:text-2xl"
+          class="place-self-center w-4/5 m-auto text-regular lg:text-2xl"
         >
           <header id="insight-article-header" class="headexx">
             <h3 class="border-b-[1px] border-white capitalize">
@@ -117,7 +96,7 @@
             </h3>
             <h4 class="italic opacity-50 profile-heading">from Permacrisis</h4>
           </header>
-          <p>
+          <p class="paragraph">
             The world went through, covid demand, and the supply shock, then
             demand shocks, the shocks and aftershocks associated with the
             ongoing war in Ukraine, Gaza, and countless of other conflicts major
@@ -127,7 +106,7 @@
               >Gordon Brown, former Prime Minister of Britain.</span
             >
           </p>
-          <p>
+          <p class="paragraph">
             The world is about to experience productivity like nothing before.
             Companies should prioritize productizing AI in all aspects of
             production that makes sense while building a layer of human control
@@ -138,9 +117,19 @@
             <span class="text-base opacity-50">Micael Spence NYU Stern.</span>
           </p>
         </article>
-
-        <section
-          class="w-4/5 lg:w-1/2 text-regular lg:text-2xl m-8 border-white"
+        <div
+          class="media bg-business bg-no-repeat bg-cover bg-top aspect-video media"
+        ></div>
+        <iframe
+          class="lg:h-full lg:w-full mx-auto sm:aspect-video"
+          src="https://www.youtube-nocookie.com/embed/WO2yLOpJaK0?si=7rfCNlXpM3OpAGiI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <article
+          class="mx-auto w-4/5 place-self-center w-4/5 m-auto text-regular lg:text-2xl"
         >
           <header>
             <h3 class="border-b-[1px] border-white capitalize">
@@ -150,7 +139,7 @@
               Research, Technology, jobs
             </h4>
           </header>
-          <p>
+          <p class="paragraph">
             Bayo Adebogun, cofounder of Adebouge Holdings was educated in
             Nigeria and the US, brings unique leadership experience from
             Nigerian education, government, and tech sectors. With a decade
@@ -165,8 +154,28 @@
             with Eldridge Investments Group. He enjoys outdoor activities with
             his family.
           </p>
-        </section>
+          <div class="mt-[2.5rem] flex gap-8 align-center justify-end">
+            <a
+              class="link w-[1.5rem] aspect-square block"
+              href="https://twitter.com/BayoAdebogun?s=20&t=uHMYAVR9alnVAD515xanCA"
+            >
+              <svg class="w-full animate-pulse aspect-square block">
+                <use href="./assets/img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a
+              class="link w-[1.5rem] aspect-square block"
+              href="https://www.linkedin.com/in/adebayo-adebogun-pmp?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAhrmD4By6dXII6HnwPzEhNhvRYvr7kJBIY&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BgFG0nUwzSY%2BuHsxHgm4Dyw%3D%3D"
+            >
+              <svg class="w-full animate-pulse aspect-square block">
+                <use href="./assets/img/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </article>
       </div>
+
+      <!-- <div class="flex flex-col items-center justify-betweeen"></div> -->
     </main>
 
     <footer
@@ -179,8 +188,9 @@
         >
       </p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
 
     <script src="./assets/script.js"></script>
   </body>

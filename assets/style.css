@@ -104,3 +104,26 @@ p {
 .tagline {
   height: fit-content;
 }
+
+.trigger {
+  position: absolute;
+  top: 75vh;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  background-color: lightgray;
+  padding: 20px;
+}
+.box {
+  background-color: black;
+  width: 10vw;
+  height: 10vw;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  flex-direction: column;
+}
